@@ -31,13 +31,17 @@ function DarkModeSwitch({ theme, setTheme }) {
     );
 
     return (
-        <button
-          className={`sm:w-[12vh] px-4 py-2 rounded-[4vh] bottom-10 absolute left-10 items-start flex justify-center ${
-            theme === 'dark' ? 'bg-white text-gray-900' : 'bg-gray-900 text-white'}`}
-          onClick={toggleTheme}
-        >
-          {theme === 'light' ? <Moon /> : <Sun/>}
-        </button>
+          <div>
+                <a href="tel:0547723219" className="font-bold text-2xl color-gray absolute bottom-[9vh] left-10 py-2">✆ Call Us!</a>
+                <br />
+                <button
+                  className={`sm:w-[12vh] px-4 py-2 rounded-[4vh] bottom-10 absolute left-10 items-start flex justify-center ${
+                    theme === 'dark' ? 'bg-white text-gray-900' : 'bg-gray-900 text-white'}`}
+                  onClick={toggleTheme}
+                >
+                  {theme === 'light' ? <Moon /> : <Sun/>}
+                </button>
+          </div>
     );
   }
   
